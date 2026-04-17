@@ -1,0 +1,345 @@
+slip 6
+________________________________________
+Q.1 Compliance within Fintech – RBI PSS [15M]
+a) RBI PSS (Reserve Bank of India - Payment and Settlement Systems)?  
+Answer:
+RBI PSS (Reserve Bank of India – Payment and Settlement Systems):
+•	Definition: RBI PSS is the framework established by the Reserve Bank of India to regulate all payment and settlement systems in India.
+•	Purpose:
+1.	Ensure secure, efficient, and reliable payment systems.
+2.	Reduce operational and financial risks in payments.
+3.	Promote consumer protection and financial stability.
+Components of RBI PSS:
+1.	RTGS (Real-Time Gross Settlement):
+•	Immediate settlement of large-value interbank transactions.
+2.	NEFT (National Electronic Funds Transfer):
+•	Batch-based settlement for retail payments.
+3.	UPI (Unified Payments Interface):
+•	Mobile-based instant payments system.
+4.	Clearing Systems:
+•	Netting and reconciliation between banks for smooth settlement.
+Key Compliance Guidelines:
+•	Banks must adhere to RBI operational standards.
+•	Ensure transaction security, audit trails, and timely settlements.
+•	Implement fraud detection and monitoring mechanisms.
+Conclusion:
+•	RBI PSS compliance is mandatory for fintech companies in India, ensuring legal, safe, and efficient digital payment systems.
+________________________________________
+Q.2 Introduction to DevSecOps in Fintech [15M]
+(a) DevSecOPs in Fintech
+Answer:
+•	DevSecOps is the integration of security practices within the DevOps workflow.
+•	Purpose:
+•	Ensure continuous security during software development, testing, and deployment.
+•	Shift security from reactive to proactive in fintech applications.
+•	Key Benefits in Fintech:
+1.	Early detection of vulnerabilities.
+2.	Secure CI/CD pipelines.
+3.	Compliance with regulatory standards (e.g., PCI DSS, RBI PSS).
+________________________________________
+(b) CI/CD Introduction
+Answer:
+•	CI/CD stands for Continuous Integration / Continuous Deployment.
+•	CI (Continuous Integration):
+•	Developers merge code into a shared repository frequently.
+•	Automated tests are run to detect issues early.
+•	CD (Continuous Deployment):
+•	Code changes are automatically deployed to production after passing tests.
+•	Role in Fintech:
+•	Enables faster delivery of fintech applications.
+•	Automates security checks and compliance validations in DevSecOps pipelines.
+________________________________________
+(c) SSDLC (Secure Software Development Life Cycle) Introduction
+Answer:
+•	SSDLC integrates security at every stage of the software development life cycle.
+•	Phases:
+1.	Requirements: Define security requirements and compliance standards.
+2.	Design: Apply security architecture and threat modeling.
+3.	Implementation: Write secure code using best practices.
+4.	Testing: Conduct vulnerability scans, penetration testing.
+5.	Deployment: Ensure secure configuration and environment hardening.
+6.	Maintenance: Monitor, patch, and update systems continuously.
+•	Importance in Fintech:
+•	Protects sensitive financial data.
+•	Ensures regulatory compliance and reduces risk of breaches.
+
+
+slip 7
+________________________________________
+Q.1 Introduction to Software Composition Analysis (SCA) – Security Case Study [15M]
+Answer:
+Definition of SCA:
+•	Software Composition Analysis (SCA) is the process of analyzing software applications to identify third-party and open-source components, and check for security vulnerabilities, license compliance, and outdated dependencies.
+Importance in Fintech Security:
+•	Fintech applications often use third-party libraries for payment processing, encryption, or analytics.
+•	Vulnerable components can lead to data breaches, financial fraud, and regulatory non-compliance.
+Case Study Example – Fintech Application:
+•	Scenario: A digital wallet app uses multiple open-source libraries for encryption and payment integration.
+•	Problem: One library had a known vulnerability that could allow attackers to steal cardholder data.
+•	SCA Implementation:
+1.	Scan all third-party libraries using SCA tools (e.g., Snyk, WhiteSource, Black Duck).
+2.	Identify vulnerabilities and outdated versions.
+3.	Apply patches or upgrade libraries.
+4.	Continuously monitor new vulnerabilities.
+•	Outcome:
+•	Prevented potential data breaches.
+•	Ensured PCI DSS compliance.
+•	Improved customer trust and security posture.
+Conclusion:
+•	SCA is a proactive security measure in fintech that ensures software integrity and compliance, protecting financial data from risks arising from third-party components.
+________________________________________
+Q.2 Shift Left Security in DevOps [15M]
+(a) What is a challenge when applying a shift left approach? [5M]
+Answer:
+•	Shift Left Approach: Integrating testing and security checks early in the software development lifecycle.
+•	Challenges:
+1.	Cultural Change: Developers may resist taking on security responsibilities.
+2.	Skill Gap: Developers may lack security expertise to identify vulnerabilities.
+3.	Tool Integration: Difficulty integrating security tools into CI/CD pipelines.
+4.	Initial Time Investment: Early security testing may increase development time temporarily.
+________________________________________
+(b) Why do DevOps recommend shift left testing principles? [5M]
+Answer:
+•	Early Detection: Finds vulnerabilities during development, reducing cost and impact.
+•	Faster Remediation: Issues are easier and cheaper to fix when identified early.
+•	Continuous Security: Aligns with DevOps principles of automation and continuous delivery.
+•	Improved Compliance: Ensures regulatory standards (PCI DSS, RBI PSS) are met from the start.
+________________________________________
+(c) What is the main focus of automating the process of security checks when shifting left? [5M]
+Answer:
+•	Goal: Integrate security automation early in the CI/CD pipeline.
+•	Focus Areas:
+1.	Static Analysis (SAST): Automatically scan code for vulnerabilities during development.
+2.	Dependency Scanning (SCA): Detect vulnerable third-party libraries.
+3.	Dynamic Testing (DAST): Test application behavior in a controlled environment.
+4.	Compliance Verification: Ensure regulatory and security policies are automatically enforced.
+•	Outcome: Faster, repeatable, and continuous security checks with minimal manual intervention.
+
+
+
+
+
+slip 10
+________________________________________
+Q.1 Introduction to Shift Left Principle in Fintech – Security Case Study [15M]
+Answer:
+Definition – Shift Left Principle:
+•	Shift Left is a DevSecOps approach where security and testing activities are integrated early in the software development lifecycle (SDLC) instead of waiting until the end.
+•	In fintech, it ensures that applications handling sensitive financial data are secure from the beginning of development.
+Security Case Study – Fintech Payment App:
+•	Scenario: A digital wallet application is being developed for online payments and fund transfers.
+•	Challenges:
+•	High risk of fraud and data breaches if security is added late.
+•	Compliance requirements such as PSD2, PCI DSS, and RBI PSS must be met.
+Implementation of Shift Left:
+1.	Secure Coding Guidelines: Developers write code following secure coding practices from day one.
+2.	Early Security Testing:
+•	Use SAST (Static Application Security Testing) to identify vulnerabilities in code.
+•	Integrate SCA (Software Composition Analysis) to check third-party libraries.
+3.	Automated CI/CD Security Checks:
+•	Security tools integrated into the pipeline detect issues before deployment.
+4.	Compliance Verification:
+•	Ensure PSD2 and PCI DSS requirements are met during development.
+5.	Outcome:
+•	Early detection and remediation of vulnerabilities.
+•	Reduced cost of fixing security issues.
+•	Strong regulatory compliance and secure fintech application launch.
+Conclusion:
+•	Applying the Shift Left principle in fintech improves security, reduces risks, and ensures regulatory compliance from the start.
+________________________________________
+Q.2 PSD2 Requirements, Effects, and Purpose [15M]
+(a) What are the requirements for a PSD2 payment [5M]
+•	Strong Customer Authentication (SCA): Multi-factor authentication for online payments.
+•	Secure APIs: Banks must allow authorized third-party providers to access account data securely.
+•	Transaction Monitoring: Real-time fraud detection and alerting.
+•	Data Protection: Encryption of sensitive financial data.
+•	Customer Consent: Explicit approval for third-party access to accounts.
+________________________________________
+(b) How does PSD2 affect banks? [5M]
+•	Open Banking: Banks must provide secure API access to third-party providers, increasing competition.
+•	Enhanced Security Requirements: Implement multi-factor authentication and fraud detection.
+•	Compliance Pressure: Banks must comply with PSD2 and regulatory standards.
+•	Innovation Requirement: Banks are encouraged to develop new digital services.
+•	Collaboration: Banks may partner with fintech companies to offer value-added services.
+________________________________________
+(c) What is the purpose of PSD2 [5M]
+•	Promote innovation in digital payments and financial services.
+•	Improve security of online transactions.
+•	Reduce fraud and unauthorized access.
+•	Give customers control over their financial data.
+•	Increase competition by enabling third-party providers.
+
+
+
+
+
+
+
+
+
+slip 11
+________________________________________
+Q.1 PSD2: Risks, Functions, and Scope [15M]
+(a) What are the risks of using PSD2 [5M]
+1.	Data Privacy Risk: Customer account information is shared with third-party providers, increasing potential exposure.
+2.	Fraud Risk: Open APIs may be exploited by malicious actors if security is weak.
+3.	Operational Risk: Banks need to maintain continuous availability of APIs, and any downtime affects payments.
+4.	Compliance Risk: Failure to meet PSD2 regulatory requirements can result in fines and legal issues.
+5.	Cybersecurity Risk: Increased attack surface due to multiple integration points with third-party providers.
+________________________________________
+(b) What are the functions of PSD2 [5M]
+1.	Strong Customer Authentication (SCA): Ensures secure multi-factor authentication for payments.
+2.	Open Banking APIs: Enables third-party providers (TPPs) to access bank account data securely.
+3.	Fraud Detection: Monitors transactions in real-time to prevent unauthorized activities.
+4.	Customer Consent Management: Ensures explicit approval for sharing account information.
+5.	Transparency: Provides clear information on fees, transactions, and third-party access.
+________________________________________
+(c) What is the scope of PSD2? [5M]
+•	PSD2 applies to:
+1.	Payment service providers: Banks, fintech companies, and other authorized payment institutions.
+2.	Payment types: Online payments, credit transfers, direct debits, card payments, and mobile payments.
+3.	Geographical scope: European Union (EU) and European Economic Area (EEA) member countries.
+4.	Third-party providers: Regulated access to account information (AISPs) and payment initiation (PISPs).
+•	Objective: Promote innovation, competition, and security in digital payment services.
+________________________________________
+Q.2 Introduction to Shift Left Principle in Fintech – Security Case Study [15M]
+Answer:
+Definition:
+•	The Shift Left principle in DevSecOps involves integrating security and testing activities early in the software development lifecycle (SDLC).
+•	In fintech, this ensures that applications handling sensitive financial data are secure from the beginning.
+Security Case Study – Fintech Payment Application:
+•	Scenario: A digital wallet app providing peer-to-peer payments and online transactions.
+•	Challenges:
+•	Risk of fraud, data breaches, and non-compliance with PSD2 and PCI DSS.
+•	High cost of fixing vulnerabilities detected late in development.
+Implementation:
+1.	Secure Coding Practices: Developers follow best practices from the start.
+2.	Early Security Testing:
+•	SAST: Static analysis of code for vulnerabilities.
+•	SCA: Check for vulnerable third-party libraries.
+3.	CI/CD Pipeline Integration: Security tools automatically scan code during build and deployment.
+4.	Regulatory Compliance: Ensure PSD2, PCI DSS, and RBI PSS standards are met throughout development.
+5.	Outcome:
+•	Early detection of security vulnerabilities.
+•	Reduced remediation cost.
+•	Secure, compliant fintech application launch.
+Conclusion:
+•	Shift Left in fintech ensures secure software delivery, regulatory compliance, and reduced operational risk.
+
+
+
+
+slip 12
+________________________________________
+Q.1 Shift Left in DevOps – Challenges, Recommendations, and Automation [15M]
+(a) What is a challenge when applying a shift left approach? [5M]
+•	Skill Gap: Developers may lack security expertise to detect vulnerabilities early.
+•	Cultural Resistance: Teams may resist integrating security responsibilities into development.
+•	Tool Integration Complexity: Difficulty incorporating security tools into existing CI/CD pipelines.
+•	Initial Development Delays: Early security checks may temporarily slow down development.
+•	Managing False Positives: Automated tools may generate false alerts, requiring careful triage.
+________________________________________
+(b) Why do DevOps recommend shift left testing principles? [5M]
+•	Early Detection of Issues: Identifies vulnerabilities during development rather than after deployment.
+•	Cost Efficiency: Fixing issues early reduces remediation costs compared to post-release fixes.
+•	Continuous Security: Aligns with DevOps principles of continuous integration and deployment.
+•	Regulatory Compliance: Ensures fintech applications comply with standards like PCI DSS, PSD2, and RBI PSS.
+•	Improved Software Quality: Early testing prevents accumulation of technical debt.
+________________________________________
+(c) What is the main focus of automating the process of security checks when shifting left? [5M]
+•	Goal: Integrate automated security validation into the development pipeline to ensure continuous protection.
+•	Focus Areas:
+1.	Static Code Analysis (SAST): Scan source code for vulnerabilities.
+2.	Software Composition Analysis (SCA): Detect vulnerable third-party libraries.
+3.	Dynamic Testing (DAST): Identify runtime security issues in staging environments.
+4.	Compliance Enforcement: Automatically verify that code meets regulatory and security policies.
+5.	Continuous Feedback: Provide developers with actionable reports to fix vulnerabilities immediately.
+________________________________________
+Q.2 Describe the Case Study on Fintech in “Singapore” [15M]
+Introduction:
+•	Singapore is a global fintech hub known for its digital payment innovations, secure financial ecosystem, and supportive regulatory environment.
+Key Features of Singapore Fintech Ecosystem:
+1.	Digital Payments:
+•	PayNow enables instant peer-to-peer payments using mobile numbers.
+•	Mobile wallets, QR code payments, and contactless solutions are widely adopted.
+2.	Blockchain and Digital Finance:
+•	Banks and startups use blockchain for cross-border payments and trade finance.
+•	Example: RippleNet integration for faster and secure international transfers.
+3.	Lending Platforms:
+•	Fintech startups provide AI-driven loans to small businesses and individuals.
+4.	Regulatory Support:
+•	Monetary Authority of Singapore (MAS) FinTech Sandbox allows safe experimentation of financial technologies without full regulatory compliance initially.
+5.	Collaborative Ecosystem:
+•	Collaboration between banks, startups, universities, and technology companies drives innovation.
+•	Notable players: Grab Financial, Singtel Dash, Razer Fintech.
+Impact:
+•	Singapore has become a model for secure and innovative digital finance.
+•	Encourages financial inclusion and rapid adoption of cashless payments.
+•	Maintains regulatory compliance, customer trust, and cybersecurity in fintech operations.
+Conclusion:
+•	The Singapore fintech case study demonstrates how innovation, regulation, and security can coexist to build a robust digital financial ecosystem.
+
+
+
+
+
+slip 13
+________________________________________
+Q.1 Write Down the Case study on Internet and mobile finance: Alibaba, Alipay to Ant Financial" [15M]
+Background:
+•	Alibaba: Founded in 1999 as a leading Chinese e-commerce company.
+•	Alipay: Launched in 2004 to provide secure online payment for Alibaba customers.
+•	Ant Financial (Ant Group): Created as Alibaba’s fintech arm to expand digital financial services.
+Key Developments:
+1.	Alipay:
+•	Started as an escrow-based payment system ensuring buyer-seller protection.
+•	Provided secure online transactions, reducing payment fraud.
+2.	Ant Financial Expansion:
+•	Offers mobile payments, lending, insurance, and wealth management.
+•	Example: Yu’e Bao – one of the largest online money market funds in China.
+3.	Mobile Finance Impact:
+•	Leveraged AI and big data for credit scoring and risk assessment.
+•	Promoted a cashless society in China.
+4.	Security Measures:
+•	Multi-layered security with encryption, authentication, and fraud detection.
+•	Compliance with regulatory frameworks.
+Outcome:
+•	Millions of users adopted mobile payments.
+•	Created a digital ecosystem integrating e-commerce, finance, and social payments.
+•	Ensured secure, fast, and scalable payment solutions.
+Conclusion:
+•	The Alibaba-Alipay-Ant Financial model demonstrates how fintech, mobile finance, and secure digital payments can drive innovation and inclusion.
+________________________________________
+Q.2 Introduction to DevSecOps, CI/CD, SSDLC [15M]
+(a) DevSecOps in Fintech [5M]
+•	Definition: DevSecOps integrates security into the DevOps workflow, ensuring secure software delivery.
+•	Purpose in Fintech:
+•	Detect vulnerabilities early in development.
+•	Maintain compliance with PCI DSS, PSD2, RBI PSS.
+•	Reduce operational and cybersecurity risks in financial applications.
+•	Benefits: Continuous monitoring, automated security testing, faster remediation, and compliance enforcement.
+________________________________________
+(b) CI/CD Introduction [5M]
+•	Definition: CI/CD stands for Continuous Integration / Continuous Deployment.
+•	Continuous Integration (CI): Developers frequently merge code into a shared repository; automated tests run to detect issues.
+•	Continuous Deployment (CD): Code changes are automatically deployed to production after passing tests.
+•	Importance in Fintech:
+•	Faster and reliable software delivery.
+•	Security and compliance checks can be automated in pipelines.
+•	Reduces human error in deployment of critical financial applications.
+________________________________________
+(c) SSDLC (Secure Software Development Life Cycle) [5M]
+•	Definition: SSDLC integrates security at every stage of software development.
+•	Phases:
+1.	Requirements: Define security and compliance needs.
+2.	Design: Apply secure architecture and threat modeling.
+3.	Implementation: Develop code using secure coding practices.
+4.	Testing: Conduct SAST, DAST, and penetration testing.
+5.	Deployment: Ensure secure configuration and hardened environments.
+6.	Maintenance: Monitor, patch, and update systems continuously.
+•	Importance in Fintech: Protects sensitive financial data and ensures regulatory compliance.
+
+
+
+
+
