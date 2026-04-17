@@ -1,0 +1,226 @@
+slip 21
+________________________________________
+Q.1 Shift Left in Fintech – Benefits, Example, and Collaboration [15M]
+(a) What are the key benefits of implementing Shift Left in Fintech? [5M]
+1.	Early Detection of Vulnerabilities: Security issues are identified during development, not after deployment.
+2.	Cost Efficiency: Fixing vulnerabilities early is less expensive than post-production remediation.
+3.	Faster Delivery: Integrating security into CI/CD pipelines reduces delays caused by late-stage security fixes.
+4.	Improved Compliance: Ensures fintech applications comply with PCI DSS, PSD2, and RBI PSS.
+5.	Enhanced Software Quality: Reduces bugs, vulnerabilities, and technical debt in production.
+6.	Continuous Security Feedback: Developers get real-time insights on code vulnerabilities.
+________________________________________
+(b) Can you provide a real-world example of Shift Left implementation in Fintech  [5M]
+Case Example: A mobile banking app implemented Shift Left principles:
+1.	Static Code Analysis (SAST): Scans for vulnerabilities during coding.
+2.	Software Composition Analysis (SCA): Detects vulnerable third-party libraries before deployment.
+3.	Automated CI/CD Pipeline Integration: Security checks run automatically on every code commit.
+Outcome:
+•	Early detection of 95% of security issues.
+•	Reduced production vulnerabilities and faster deployment cycles.
+•	Ensured compliance with RBI PSS and PCI DSS standards.
+________________________________________
+(c) How does Shift Left enhance collaboration between developers and security teams in Fintech? [5M]
+1.	Integrated Workflows: Developers and security teams work together in CI/CD pipelines rather than separately.
+2.	Continuous Feedback: Security alerts are provided in real-time, allowing developers to fix issues immediately.
+3.	Shared Responsibility: Security is considered part of development, not an afterthought.
+4.	Improved Communication: Teams use dashboards and reporting tools to track vulnerabilities collaboratively.
+5.	Faster Risk Mitigation: Early collaboration prevents delays in deployment due to security fixes.
+Conclusion:
+•	Shift Left fosters a security-first culture and ensures fintech software is secure, compliant, and reliable.
+________________________________________
+Q.2 Descibe the Case study on Internet and mobile finance: Alibaba, Alipay to Ant Financial"? [15M]
+Background:
+•	Alibaba: Founded in 1999 as a Chinese e-commerce giant.
+•	Alipay: Launched in 2004 to provide secure online payments for Alibaba customers.
+•	Ant Financial (Ant Group): Alibaba’s fintech arm, expanding services beyond payments.
+Key Developments:
+1.	Alipay:
+•	Started as an escrow-based payment system to protect buyers and sellers.
+•	Introduced encrypted transactions to prevent fraud.
+2.	Ant Financial Expansion:
+•	Provides mobile payments, lending, insurance, wealth management, and digital banking.
+•	Example: Yu’e Bao – largest online money market fund in China.
+3.	Mobile Finance Impact:
+•	Uses AI and big data for credit scoring and fraud prevention.
+•	Promotes a cashless society in China.
+4.	Security Measures:
+•	Multi-layered encryption, authentication, fraud detection, and regulatory compliance.
+Outcome:
+•	Millions of users adopted mobile payments.
+•	Ant Financial became a trusted fintech ecosystem combining e-commerce, finance, and mobile technology.
+Conclusion:
+•	Demonstrates how secure mobile finance, AI, and blockchain technologies drive fintech innovation and inclusion.
+
+
+
+slip 23
+
+________________________________________
+Q.1 Introduction to Compliance within Fintech [15M]
+Definition:
+•	Compliance in fintech ensures that digital financial services operate according to regulatory standards, security requirements, and best practices to protect customer data and maintain trust.
+________________________________________
+(a) Payment Card Industry Data Security Standard (PCI DSS) [7–8M]
+•	Definition: A global standard that protects cardholder data during payment processing.
+•	Key Requirements:
+1.	Build and maintain a secure network (firewalls, network segmentation).
+2.	Protect cardholder data with encryption in storage and transit.
+3.	Implement strong access control measures (unique IDs, role-based access).
+4.	Regularly monitor and test networks for vulnerabilities.
+5.	Maintain an information security policy for employees.
+•	Importance in Fintech:
+•	Prevents fraud and data breaches.
+•	Ensures secure card transactions.
+•	Maintains customer trust.
+________________________________________
+(b) RBI PSS (Reserve Bank of India – Payment and Settlement Systems) [7–8M]
+•	Definition: Framework by the Reserve Bank of India regulating all payment and settlement systems in India.
+•	Key Components:
+1.	RTGS (Real-Time Gross Settlement): Instant settlement of high-value interbank transactions.
+2.	NEFT (National Electronic Funds Transfer): Batch-based retail payments.
+3.	UPI (Unified Payments Interface): Instant mobile payments system.
+4.	Clearing Systems: Netting and reconciliation between banks.
+•	Compliance Requirements:
+•	Banks must follow RBI operational standards, secure transactions, maintain audit logs, and monitor fraud.
+•	Importance in Fintech:
+•	Ensures secure, efficient, and regulated payment services in India.
+________________________________________
+Q.2 Blockchain – Working, Key Components, and Role of Cryptography [15M]
+(a) How Blockchain Works [5M]
+1.	Transaction Initiation: A participant requests a transaction (e.g., sending cryptocurrency).
+2.	Validation: Network nodes validate the transaction using consensus mechanisms like Proof of Work (PoW) or Proof of Stake (PoS).
+3.	Block Creation: Validated transactions are bundled into a block.
+4.	Chaining: Each block is linked to the previous one using a cryptographic hash, forming a secure chain of blocks.
+5.	Distribution: The updated blockchain is shared across all nodes, ensuring transparency and immutability.
+________________________________________
+(b) What are the key components of a Blockchain? [5M]
+1.	Block: Contains a list of validated transactions, timestamp, and reference to the previous block.
+2.	Ledger: Distributed, immutable record of all transactions.
+3.	Node: Computers that maintain the blockchain and validate transactions.
+4.	Consensus Mechanism: Protocol to validate transactions and maintain network agreement (PoW, PoS).
+5.	Cryptography: Secures data, ensures integrity, and authenticates participants.
+6.	Smart Contracts (optional): Self-executing programs that automate transactions when conditions are met.
+________________________________________
+(c) What is the role of Cryptography in Blockchain? [5M]
+1.	Data Integrity: Cryptographic hashes ensure blocks cannot be altered without detection.
+2.	Authentication: Digital signatures verify the identity of participants.
+3.	Confidentiality: Encryption protects transaction data from unauthorized access.
+4.	Non-Repudiation: Ensures participants cannot deny their actions.
+5.	Secure Linking: Each block is cryptographically linked to the previous block, maintaining immutability.
+Conclusion:
+•	Blockchain relies on cryptography to provide a secure, transparent, and tamper-proof digital ledger, ideal for fintech applications.
+
+
+
+
+
+slip 24
+________________________________________
+Q.1 Describe about the Software composition analysis (SCA) in security case study?"  [15M]
+Definition:
+•	SCA (Software Composition Analysis) is the process of identifying and managing third-party and open-source software components used in an application. It helps detect vulnerabilities, license issues, and compliance risks in software development.
+Security Case Study – Fintech Application:
+•	Scenario: A mobile banking application uses several third-party libraries for payments, encryption, and analytics.
+•	Problem: A popular library used for encryption contained a known vulnerability that could allow attackers to access sensitive customer data.
+SCA Implementation Steps:
+1.	Inventory Management: Identify all third-party and open-source components used in the application.
+2.	Vulnerability Detection: Scan components using SCA tools like Snyk, WhiteSource, Black Duck to find known security issues.
+3.	License Compliance Check: Ensure components comply with legal and company policy requirements.
+4.	Remediation: Patch, update, or replace vulnerable components before deployment.
+5.	Continuous Monitoring: Regularly monitor components for new vulnerabilities after deployment.
+Outcome:
+•	Reduced the risk of data breaches and financial fraud.
+•	Ensured regulatory compliance with PCI DSS, PSD2, and RBI PSS.
+•	Enhanced overall software security and reliability in fintech applications.
+Conclusion:
+•	SCA is essential in fintech for secure, compliant, and reliable software development.
+________________________________________
+Q.2 DevSecOps, CI/CD, and SSDLC in Fintech [15M]
+(a) Introduction to DevSecOps in Fintech [5M]
+•	Definition: DevSecOps integrates security practices into DevOps, making security a shared responsibility throughout the software development lifecycle.
+•	Importance in Fintech:
+1.	Protects sensitive financial and customer data.
+2.	Ensures regulatory compliance with PCI DSS, PSD2, RBI PSS.
+3.	Provides continuous security monitoring in production environments.
+•	Key Practices:
+•	Automated security testing during development.
+•	Real-time vulnerability scanning in CI/CD pipelines.
+•	Collaborative culture between developers, security, and operations teams.
+________________________________________
+(b) Continuous Integration/Continuous Deployment (CI/CD) [5M]
+•	Definition: CI/CD is a methodology to automate software integration, testing, and deployment.
+•	Continuous Integration (CI): Developers frequently merge code into a shared repository; automated tests detect integration issues early.
+•	Continuous Deployment (CD): Validated code is automatically deployed to production with minimal human intervention.
+•	Benefits in Fintech:
+1.	Faster delivery of secure applications.
+2.	Early detection of vulnerabilities.
+3.	Ensures compliance and quality in production.
+________________________________________
+(c) Secure Software Development Lifecycle (SSDLC) Introduction [5M]
+•	Definition: SSDLC incorporates security at every stage of the software development lifecycle.
+•	Phases:
+1.	Requirement Analysis: Identify security requirements.
+2.	Design: Implement secure architecture and threat modeling.
+3.	Development: Use secure coding practices and SCA tools.
+4.	Testing: Perform SAST, DAST, and penetration testing.
+5.	Deployment: Apply secure configurations and monitoring.
+6.	Maintenance: Patch vulnerabilities and continuously monitor security.
+•	Importance in Fintech:
+•	Reduces risk of cyberattacks.
+•	Ensures compliance with fintech regulations.
+•	Integrates security into everyday development practices.
+
+
+
+slip 25
+________________________________________
+Q.1 Mobile Banking vs Internet Banking & UPI Technology [15M]
+(a) Which is more secure: Mobile Banking or Internet Banking? [5M]
+1.	Mobile Banking Security:
+•	Apps use multi-factor authentication (MFA), device fingerprinting, and app sandboxing.
+•	Sensitive data is encrypted at rest and in transit.
+•	Less exposed to phishing via email compared to web-based internet banking.
+2.	Internet Banking Security:
+•	Relies on web browsers, which can be vulnerable to malware, phishing, and session hijacking.
+•	Security depends on SSL/TLS encryption, strong passwords, and anti-virus software.
+Conclusion:
+•	Mobile banking is generally considered more secure than internet banking due to app-level security controls and reduced exposure to web-based attacks.
+________________________________________
+(b) How Mobile Banking Works Without Internet [5M]
+•	USSD (Unstructured Supplementary Service Data):
+•	Uses cellular network to send commands and receive responses.
+•	Example: Dial *99# for UPI-based banking.
+•	SMS Banking:
+•	Transaction requests sent via encrypted SMS to bank servers.
+•	Limitations:
+•	Limited transaction types (balance enquiry, fund transfer, mini-statement).
+•	Requires mobile network coverage but not internet connectivity.
+________________________________________
+(c) Which technology is used in UPI?  [5M]
+1.	IMPS (Immediate Payment Service): Enables instant fund transfers 24×7.
+2.	Mobile Application Layer: Interfaces like BHIM, Google Pay, or PhonePe.
+3.	UPI API Gateway: Connects banks and third-party apps.
+4.	Two-Factor Authentication: Ensures secure transactions using PIN and device verification.
+5.	End-to-End Encryption: Secures payment instructions between sender and recipient.
+________________________________________
+Q.2 Case study on cyber security risk management Explain the control architecture and supporting processes??  [15M]
+Definition:
+•	Cybersecurity Risk Management identifies, assesses, and mitigates risks to protect fintech systems and customer data.
+Case Study Example – Digital Bank:
+•	A digital bank wants to protect its online and mobile banking applications from cyber threats like phishing, malware, and data breaches.
+Control Architecture [5M]
+1.	Perimeter Security: Firewalls, VPNs, and intrusion detection systems (IDS).
+2.	Application Security: Secure coding practices, vulnerability scanning, and penetration testing.
+3.	Data Security: Encryption for data at rest and in transit, tokenization of sensitive data.
+4.	Access Control: Role-based access, multi-factor authentication, and identity management.
+5.	Monitoring & Logging: Real-time monitoring, SIEM (Security Information and Event Management) for threat detection.
+Supporting Processes [5M]
+1.	Risk Assessment: Identify potential cyber threats and vulnerabilities.
+2.	Incident Response: Procedures to handle breaches and mitigate damage.
+3.	Compliance & Auditing: Ensure adherence to PCI DSS, RBI PSS, PSD2, and local regulations.
+4.	Employee Awareness & Training: Educate staff about phishing, malware, and secure practices.
+5.	Continuous Improvement: Regular review and update of policies, tools, and security controls.
+Outcome:
+•	Reduced risk of cyber attacks, fraud, and data breaches.
+•	Ensured regulatory compliance and customer trust.
+
